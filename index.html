@@ -16,132 +16,418 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
+    <script src="index.js"></script>
+
     <!-- Navbar -->
-    <nav class="navbar bg-body-tertiary" aria-label="Light offcanvas navbar">
+    <nav class="navbar navbar-expand-lg container-fluid p-lg-5 p-3">
       <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <a class="navbar-brand text-white" href="#">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbarLight"
-          aria-controls="offcanvasNavbarLight"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbarLight"
-          aria-labelledby="offcanvasNavbarLightLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">Menu</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="intro.html">My Intro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact Me</a>
-              </li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#intro"
+                >My Intro</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#blog"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#contact"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex justify-content-center" role="search">
+            <a href="cv.html" class="btn btn-outline-success" type="submit"
+              >Review CV</a
+            >
+          </form>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="container">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-12 col-sm-12 col-lg-6">
-          <img
-            src="images/profile-picture.png"
-            class="d-block mx-lg-auto img-fluid rounded-5"
-            alt="Profile Picture"
-            width="700"
-            height="500"
-            loading="lazy"
-          />
-        </div>
-        <div class="col-lg-6">
-          <h1
-            class="display-5 fw-bold text-body-emphasis text-custom lh-1 mb-3"
-          >
-            Hi <br />
-            I am <br />
-            Nabiha-khan <br />
-            Web Developer
-          </h1>
-          <p class="lead text-custom-2">
-            I am a developer who loves coffee. I live in Karachi and enjoy
-            visiting Saudi Arabia for Hajj.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a
-              href="cv.html"
-              class="btn btn-custom rounded-5 btn-lg px-4 me-md-2"
-              target="_blank"
-              >Download CV</a
-            >
-            <a
-              href="contact.html"
-              class="btn btn-custom rounded-5 btn-lg px-4 me-md-2"
-              >Contact Me</a
-            >
+    <div class="container-fluid mb-0 p-lg-5 p-3" id="home">
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center">
+          <div class="col-12 col-sm-12 col-lg-6">
+            <img
+              src="images/profile-picture.png"
+              class="d-block mx-lg-auto img-fluid rounded-5"
+              alt="Profile Picture"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-white text-custom lh-1">
+              Hi <br />
+              I am <br />
+              <span id="typed-hero"></span>
+              <!-- Corrected span id -->
+            </h1>
+            <p class="lead text-secondary">
+              I am a developer who loves coffee. I live in Karachi and enjoy
+              visiting Saudi Arabia for Hajj.
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- JavaScript for Search Functionality -->
-    <script>
-      function handleSearch(event) {
-        event.preventDefault();
-        const query = document
-          .getElementById("searchInput")
-          .value.toLowerCase();
-        switch (query) {
-          case "home":
-            window.location.href = "index.html";
-            break;
-          case "services":
-            window.location.href = "services.html";
-            break;
-          case "blog":
-            window.location.href = "blog.html";
-            break;
-          case "intro":
-            window.location.href = "intro.html";
-            break;
-          case "contact":
-            window.location.href = "contact.html";
-            break;
-          default:
-            alert("Page not found");
-        }
-      }
-    </script>
+    <!-- Intro Section -->
+    <div class="container-fluid p-lg-5 p-3">
+      <main class="container py-5 text-white text-center" id="intro">
+        <div class="intro">
+          <h2 class="mb-4"><span id="about-text"></span></h2>
+          <p class="lead text-secondary">
+            I am Nabiha Khan, a passionate and detail-oriented web developer
+            specializing in creating responsive and user-friendly websites. With
+            a background in HTML, CSS, JavaScript, and Bootstrap, I bring
+            projects to life with clean code and innovative design solutions. My
+            dedication to continuous learning allows me to stay updated with the
+            latest technologies and trends in web development.
+          </p>
+          <p class="lead text-secondary">
+            Outside of coding, I enjoy exploring new coffee shops, reading tech
+            blogs, and traveling to broaden my cultural horizons. My goal is to
+            leverage my skills to deliver impactful web solutions that meet
+            client needs and exceed expectations.
+          </p>
+          <h1 id="myskill-text"></h1>
+          <div class="row skillContainer text-left">
+            <div class="col-md-6">
+              <div class="skillItem mb-4">
+                <span class="fw-bold">HTML:</span>
+                <div class="progress">
+                  <div class="progress-bar bg-html" style="width: 100%">
+                    Expert
+                  </div>
+                </div>
+              </div>
+              <div class="skillItem mb-4">
+                <span class="fw-bold">CSS:</span>
+                <div class="progress">
+                  <div class="progress-bar bg-css" style="width: 75%">
+                    Intermediate
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skillItem mb-4">
+                <span class="fw-bold">JavaScript:</span>
+                <div class="progress">
+                  <div class="progress-bar bg-javascript" style="width: 50%">
+                    Intermediate
+                  </div>
+                </div>
+              </div>
+              <div class="skillItem mb-4">
+                <span class="fw-bold">C++:</span>
+                <div class="progress">
+                  <div class="progress-bar bg-cpp" style="width: 25%">
+                    Beginner
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container-fluid p-lg-5 p-3">
+      <div class="container">
+        <main class="main-content" id="services">
+          <div class="container-fluid">
+            <header class="text-center mb-5">
+              <h2>Our Services</h2>
+              <p class="lead">
+                Delivering high-quality web development services tailored to
+                your needs.
+              </p>
+            </header>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- Service Cards -->
+              <div class="col">
+                <div class="card service-card border-0 shadow">
+                  <img
+                    src="images/Web Design.jpg"
+                    class="card-img-top"
+                    alt="Web Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Web Design</h5>
+                    <p class="card-text">
+                      Creating visually appealing and user-friendly web designs
+                      that enhance user experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card service-card border-0 shadow">
+                  <img
+                    src="images/Front-End Development.jpg"
+                    class="card-img-top"
+                    alt="Front-End Development"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Front-End Development</h5>
+                    <p class="card-text">
+                      Developing responsive and robust front-end interfaces
+                      using the latest technologies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card service-card border-0 shadow">
+                  <img
+                    src="images/Website Maintenance.jpg"
+                    class="card-img-top"
+                    alt="Website Maintenance"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Website Maintenance</h5>
+                    <p class="card-text">
+                      Providing ongoing support and maintenance to ensure your
+                      website runs smoothly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="blog-container-fluid p-lg-5 p-3" id="blog">
+      <div class="container">
+        <h2 class="section-title">Blogs by Nabiha Khan - the legend</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card blog-card">
+              <img
+                src="images/fun coding.jpeg"
+                class="card-img-top"
+                alt="Blog Image 1"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Learn JavaScript - in a fun way!</h3>
+                <p class="blog-excerpt">
+                  As a passionate web developer, I've honed my skills in HTML,
+                  CSS, and Bootstrap to create visually appealing and responsive
+                  websites.
+                </p>
+                <div class="blog-content">
+                  <p>
+                    Recently, I have delved into JavaScript to enhance the
+                    interactivity and functionality of my projects. Despite a
+                    busy schedule, my dedication to learning and improving my
+                    craft remains unwavering. This portfolio showcases my
+                    journey and the projects I've worked on, reflecting my
+                    commitment to delivering high-quality web solutions.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-outline-success read-more"
+                  type="submit"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card blog-card">
+              <img
+                src="images/responsive web design.jpeg"
+                class="card-img-top"
+                alt="Blog Image 1"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Responsive Design - Key Principles</h3>
+                <p class="blog-excerpt">
+                  Creating websites that work seamlessly across devices is
+                  crucial in today's digital landscape.
+                </p>
+                <div class="blog-content">
+                  <p>
+                    Responsive design ensures that your website adapts to
+                    various screen sizes and provides a consistent user
+                    experience. Key principles include flexible grids,
+                    responsive images, and media queries. By implementing these
+                    principles, you can enhance usability and accessibility,
+                    making your website accessible to a wider audience.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-outline-success read-more"
+                  type="submit"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card blog-card">
+              <img
+                src="images/web accessibility.png"
+                class="card-img-top"
+                alt="Blog Image 1"
+              />
+              <div class="card-body">
+                <h3 class="card-title">
+                  The Importance of Accessibility in Web Design
+                </h3>
+                <p class="blog-excerpt">
+                  Accessibility in web design ensures that all users, including
+                  those with disabilities, can access and interact with your
+                  website effectively.
+                </p>
+                <div class="blog-content">
+                  <p>
+                    Implementing accessible practices such as proper HTML
+                    semantics, keyboard navigation support, and alternative text
+                    for images not only improves usability but also demonstrates
+                    inclusivity. By prioritizing accessibility, you can create a
+                    more user-friendly and socially responsible web presence.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-outline-success read-more"
+                  type="submit"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <main class="main p-lg-5 p-3" id="contact">
+      <section class="contact-form">
+        <div class="container">
+          <h1 class="section-title mb-4">
+            Contact Me for Work/General Enquiries
+          </h1>
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="client-name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="client-name"
+                  aria-describedby="nameHelp"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="client-email" class="form-label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="client-email"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter your email"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email & phone with anyone else.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="client-phone" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="client-phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="client-enquiry" class="form-label">Enquiry</label>
+                <textarea
+                  class="form-control"
+                  id="client-enquiry"
+                  rows="3"
+                  placeholder="Type your enquiry here"
+                ></textarea>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="is-client" />
+              <label class="form-check-label" for="is-client"
+                >I want you to work on a project with me</label
+              >
+            </div>
+            <a href="#" class="btn btn-outline-success read-more" type="submit"
+              >Submit</a
+            >
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

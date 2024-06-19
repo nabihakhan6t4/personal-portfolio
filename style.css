@@ -1,287 +1,162 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap");
-body {
-  background: #f8f9fa;
-  font-family: "Fira Sans", sans-serif;
-}
-
-.navbar {
-  background-color: #007bff;
-}
-
-.navbar-nav {
-  text-align: center;
-}
-
-.navbar-nav .nav-link {
-  color: #ffffff;
-}
-
-.navbar-nav .nav-link:hover {
-  background-color: #6c757d;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-h1,
-h2,
-h3 {
-  color: #343a40;
-}
-
-p {
-  color: #6c757d;
-}
-
-.btn-custom {
-  background: dodgerblue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
   color: white;
 }
 
-.btn-custom:hover {
-  color: dodgerblue;
-  background: white;
+/* Adjust margin for the #intro section */
+#intro {
+  margin-top: 0; /* Remove top margin */
+  padding-top: 20px; /* Optional: Add some padding to the top if needed */
+  padding-bottom: 20px; /* Optional: Add some padding to the bottom if needed */
 }
 
-.text-custom {
-  font-family: "Source Code Pro", monospace;
+/* Skill Item Styling */
+.skillItem {
+  padding: 10px; /* Add padding around each skill item */
 }
 
-/* Additional CSS for Specific Elements in contact.html */
-.contact-form {
-  margin-top: 20px;
+/* Progress Bar Styling */
+.progress-bar {
+  text-align: center; /* Center align text within progress bar */
+  font-weight: bold; /* Make progress bar text bold */
+  height: 40px; /* Set height for the progress bars */
+  line-height: 40px; /* Center align text vertically */
 }
 
-.contact-form form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form h1 {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-form .form-check-label {
-  font-size: 14px;
-}
-
-/* blog page styling */
-/* General styling for blog items */
-.blog-item {
-  margin: 20px;
-  font-family: "Fira Sans", sans-serif;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-container h1 {
-  font-family: "Fira Sans", sans-serif;
-  margin: 23px;
-}
-
-.blog-item h2 {
-  font-family: "Fira Sans", sans-serif;
-  margin: 10px 0;
-}
-
-.blog-item .blog-excerpt {
-  font-family: "Source Code Pro", monospace;
-  margin-bottom: 10px;
-  overflow: hidden;
-  max-height: 120px; /* Adjust as needed */
-}
-
-.blog-content {
-  display: none; /* Hide full content by default */
-  font-family: "Source Code Pro", monospace;
-}
-
-.blog-content.expanded {
-  display: block; /* Show full content when expanded */
-}
-
-.btn {
-  padding: 12px 24px;
-  border-radius: 22px;
-  color: white;
-  background: dodgerblue;
-  font-weight: bold;
-  font-size: 1.3125rem;
-  margin: 12px 3px;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: white;
-  color: dodgerblue;
-  border: 1px solid dodgerblue;
-}
-
-/* services style */
+/* Custom Styles for Services Section */
 
 .service-card {
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 100%;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 .card-img-top {
+  height: 200px; /* Adjust height as per your design */
+  object-fit: cover;
+}
+
+/* Blog Section Styles */
+
+.blog-container {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blog-card {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card .card-img-top {
   height: 200px;
   object-fit: cover;
 }
 
-.card-title,
-.card-text {
-  font-family: "Source Code Pro", monospace;
-}
-
-.container-fluid {
-  display: flex;
-  min-height: 100vh;
-}
-
-.sidebar {
-  width: 250px;
-  flex: 0 0 auto;
+.blog-card .card-body {
   padding: 20px;
 }
 
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
+.blog-card .card-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-.sidebar nav li {
-  font-size: 1.25rem;
-  padding: 10px 0;
+.blog-card .card-text {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.sidebar nav li a {
-  text-decoration: none;
-  color: black;
+.read-more {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
 }
 
-.main-content {
-  flex: 1;
-  padding: 20px;
+.read-more:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
 }
 
-@media (max-width: 992px) {
-  .container-fluid {
-    flex-direction: column;
-  }
-}
-/* intro styling */
-body {
-  font-family: "Fira Sans", sans-serif;
-  background-color: #f8f9fa; /* Light gray background */
-  color: #333; /* Dark text color */
+.read-more:focus,
+.read-more.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-.container-fluid {
-  margin-top: 24px; /* Add some spacing from top */
+.more-text {
+  display: none; /* Initially hide the additional text */
+  transition: max-height 0.3s ease;
+  overflow: hidden;
 }
 
-.sidebar {
-  background-color: #fff; /* White sidebar background */
-  padding: 16px;
-  border-right: 1px solid #ddd; /* Light border on the right */
+.more-text.expanded {
+  display: block; /* Display the entire text when expanded */
+  max-height: 500px; /* Adjust max-height as needed */
 }
 
-.main {
-  padding: 24px;
+/* CSS for blog excerpts and content */
+.blog-content {
+  display: none; /* Initially hide full content */
+  transition: max-height 0.3s ease;
+  overflow: hidden;
 }
 
-.intro h2 {
-  margin-bottom: 12px;
-  font-size: 2rem;
+.blog-content.show {
+  display: block; /* Display full content when 'show' class is added */
+  max-height: 500px; /* Adjust max-height as needed */
 }
 
-.intro p {
-  margin-bottom: 12px;
-  font-family: "Source Code Pro", monospace;
-  font-size: 1.125rem;
-}
-
-.skillContainer {
-  padding: 12px;
-  background-color: #fff; /* White background for skills container */
-  border: 1px solid #ddd; /* Light border around skills container */
-  border-radius: 4px; /* Rounded corners */
-}
-
-.skillItem {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.skillItem span {
-  width: 100px;
-  font-family: "Source Code Pro", monospace;
-  font-weight: bold;
-  margin-right: 16px;
-}
-
-.progress {
-  flex-grow: 1;
-  height: 20px; /* Adjust height of progress bars */
-}
-
-.progress-bar {
-  height: 100%; /* Fill the entire height of progress bar */
-  color: #333; /* Dark text color for progress bar text */
-}
-
-.bg-html {
-  background-color: #e34c26;
-  color: white; /* HTML5 logo color */
-}
-
-.bg-css {
-  background-color: #264de4;
-  color: white; /* CSS3 logo color */
-}
-
-.bg-javascript {
-  background-color: #f0db4f;
-  color: black; /* JavaScript logo color */
-}
-
-.bg-cpp {
-  background-color: #00599c;
-  color: white; /* C++ logo color */
-}
-
-@media (max-width: 991.98px) {
-  .sidebar {
-    display: none; /* Hide sidebar on smaller screens */
-  }
-
-  .main {
-    padding-left: 16px; /* Add left padding to main content */
-    padding-right: 16px; /* Add right padding to main content */
-  }
+.blog-excerpt.hide {
+  display: none; /* Hide excerpt when 'hide' class is added */
 }
