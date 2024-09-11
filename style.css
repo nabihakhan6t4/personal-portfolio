@@ -16,10 +16,15 @@
 }
 
 :root {
-  --bg-color: #081b29;
+  /* --bg-color: #081b29;
   --second-bg-color: #112e42;
   --text-color: #ededed;
-  --main-color: #00abf0;
+  --main-color: #00abf0; */
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --main-color: #754e59;
+  --white-color:#fdfdfd;
+  --shadow-color: rgba(0,0,0,.2);
 }
 
 /* Base Styles */
@@ -312,4 +317,11 @@ span {
 
 .btn-box.btns a::before {
   background: var(--second-bg-color);
+}
+
+.portfolio {
+  background: var(--second-bg-color)
+  ;
+
+
 }
