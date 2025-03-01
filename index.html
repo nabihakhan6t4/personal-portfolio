@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Nabiha Khan</title>
+    <title>Portfolio - Nabiha Khan | Frontend Developer</title>
     <!-- Bootstrap CSS -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    />
+    /> -->
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -24,140 +24,62 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <a href="#" class="logo">Nabiha-Khan.</a>
-      <div class="fa-solid fa-bars" id="menu-icon"></div>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+    <header>
+      <a href="" class="logo">Nabiha Khan</a>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <nav>
+        <a href="" class="active">Home</a>
+        <a href="">Skills</a>
+        <a href="">Resume</a>
+        <a href="">Portfolio</a>
+        <a href="">Contact</a>
       </nav>
     </header>
-
-    <!-- Home Section -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi, I'm <span>Nabiha Khan</span></h1>
-        <div class="text-animate">
-          <h3>Frontend Developer</h3>
-        </div>
+    <!-- home section -->
+    <section class="home">
+      <div class="home-detail">
+        <h1>Nabiha Khan</h1>
+        <h2>
+          I am a
+          <span style="--i: 4" data-text="Coder">Coder</span>
+          <span style="--i: 3" data-text="Developer">Developer</span>
+          <span style="--i: 2" data-text="Designer">Designer</span>
+          <span style="--i: 1" data-text="Tech Learner">Tech Learner</span>
+        </h2>
         <p>
-          Passionate about creating interactive applications and experiences on
-          the web.
+          Passionate Frontend Developer | HTML, CSS, JavaScript, React,
+          Tailwind, Bootstrap, Firebase, MongoDB, Express.js
         </p>
-        <div class="btn-box">
-          <a href="#projects" class="btn">Projects</a>
-          <a href="#contact" class="btn">Contact Me</a>
-        </div>
-      </div>
-      <div class="home-sci">
-        <a href="https://www.facebook.com/profile.php?id=61556665960662"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/nabiha-khan-5864742b2/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/nabihakhan6t4"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-      </div>
-      <div class="home-imgHover"></div>
-    </section>
+        <div class="btn-sci">
+          <a href="#" class="btn">Download CV</a>
+          <div class="sci">
+            <a href="https://github.com/nabihakhan6t4" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nabiha-khan-5864742b2/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <h2 class="heading">About <span>Me</span></h2>
-      <div class="about-img">
-        <img src="images/nabiha-khan.jpg" alt="Nabiha Khan" />
-        <span class="circle-spin"></span>
-      </div>
-      <div class="about-content">
-        <h3>Frontend Developer</h3>
-        <p>
-          I specialize in crafting engaging and interactive user experiences
-          using modern web technologies like HTML, CSS, JavaScript, and
-          frameworks. I am continuously learning and staying up-to-date with
-          industry trends to deliver high-quality and efficient solutions.
-        </p>
-        <div class="btn-box btns">
-          <a href="#" class="btn">Read More </a>
-        </div>
-      </div>
-    </section>
-    <!-- project-section -->
-    <section class="project" id="projects">
-      <h2 class="heading">Latest <span>Projects</span></h2>
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="images/e-commerce.jpeg" alt="E-commerce" />
-          <div class="portfolio-layer">
-            <h4>E-commerce</h4>
-            <p>
-              This project showcases skills in creating complex web apps with
-              features like product listings, shopping carts, and user
-              authentication.
-            </p>
-            <a
-              href="https://nabihakhan6t4.github.io/E-commerce/"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/Tic-Tac-Toe Game.jpeg" alt="Tic-Tac-Toe Game" />
-          <div class="portfolio-layer">
-            <h4>Tic-Tac-Toe Game</h4>
-            <p>
-              A JavaScript project showcasing logic building. It includes AI to
-              play against, enhancing user interaction.
-            </p>
-            <a
-              href="https://nabihakhan6t4.github.io/tic-tac-toe/"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/Weather Checker Ap.jpeg" alt="Weather Checker App" />
-          <div class="portfolio-layer">
-            <h4>Weather Checker App</h4>
-            <p>
-              This project demonstrates API integration skills, displaying data
-              from external sources in a user-friendly way.
-            </p>
-            <a
-              href="https://nabihakhan6t4.github.io/jsproject-weather-check-app/"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/Online-Code_editor.jpeg" alt="Online Code Editor" />
-          <div class="portfolio-layer">
-            <h4>Online Code Editor</h4>
-            <p>
-              This project features a web-based code editor where users can
-              write and test HTML, CSS, and JavaScript code.
-            </p>
-            <a
-              href="https://nabihakhan6t4.github.io/Online-code-editor/"
-              target="_blank"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
+            <a href="https://wa.me/923413067774" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
-    </section>
 
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="images/nabiha.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
