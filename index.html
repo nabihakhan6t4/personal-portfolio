@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="active">
       <a href="" class="logo">Nabiha Khan</a>
       <i class="fa-solid fa-bars" id="menu-icon"></i>
       <nav>
@@ -35,43 +35,69 @@
         <a href="">Contact</a>
       </nav>
     </header>
-    <!-- home section -->
-    <section class="home">
+
+    <!-- bars background -->
+
+    <div class="bars-box active">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 5"></div>
+      <div class="bar" style="--i: 4"></div>
+      <div class="bar" style="--i: 3"></div>
+      <div class="bar" style="--i: 2"></div>
+      <div class="bar" style="--i: 1"></div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home active">
       <div class="home-detail">
         <h1>Nabiha Khan</h1>
-        <h2>
+        <h2 class="typing-text">
           I am a
-          <span style="--i: 4" data-text="Coder">Coder</span>
-          <span style="--i: 3" data-text="Frontend Developer"
-            >Frontend Developer</span
+          <span style="--i: 4" data-text="MERN Stack Developer"
+            >MERN Stack Developer</span
           >
+          <span style="--i: 3" data-text="Creative Coder">Creative Coder</span>
           <span style="--i: 2" data-text="Problem Solver">Problem Solver</span>
           <span style="--i: 1" data-text="Tech Explorer">Tech Explorer</span>
         </h2>
         <p>
-          Passionate Frontend Developer skilled in HTML, CSS, JavaScript, React,
-          Tailwind CSS, Bootstrap, Firebase, MongoDB, and Express.js. Dedicated
-          to crafting seamless user experiences and bringing creative ideas to
-          life.
+          Passionate MERN Stack Developer skilled in HTML, CSS, JavaScript,
+          React, Tailwind CSS, Bootstrap, Firebase, MongoDB, and Express.js. I
+          create seamless user experiences and turn creative ideas into reality.
+          💻✨
         </p>
+
         <div class="btn-sci">
           <a href="#" class="btn">Download CV</a>
           <div class="sci">
-            <a href="https://github.com/nabihakhan6t4" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+            <a
+              href="https://github.com/nabihakhan6t4"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
             <a
               href="https://www.linkedin.com/in/nabiha-khan-5864742b2/"
               target="_blank"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-
-            <a href="https://wa.me/923413067774" target="_blank"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://wa.me/923413067774"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -79,7 +105,7 @@
       <div class="home-img">
         <div class="img-box">
           <div class="img-item">
-            <img src="images/nabiha.jpg" alt="" />
+            <img src="images/nabiha.jpg" alt="Nabiha Khan" />
           </div>
         </div>
       </div>
@@ -384,66 +410,263 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio active">
+    <section class="portfolio">
       <h2 class="heading">Latest <span>Projects</span></h2>
       <div class="portfolio-container">
         <div class="portfolio-box">
           <div class="portfolio-detail active">
             <p class="numb">01</p>
-            <h3>Frontend Project</h3>
+            <h3>Ant Design UI</h3>
             <p>
-              Designed and developed a fully responsive frontend project using
-              HTML, CSS, and JavaScript.
+              Built a fully responsive user interface using
+              <strong>Ant Design</strong> and modern web tools. This project
+              reflects clean, interactive design with a strong focus on UI/UX
+              best practices.
             </p>
             <div class="tech">
-              <p>HTML5 , CSS3 , JAVASCRIPT</p>
+              <p>React, Ant Design</p>
             </div>
             <div class="live-github">
-              <a href=""
-                ><i class="fa-solid fa-arrow-left"></i>
+              <a
+                href="https://nabihakhan6t4.github.io/Ant-design-UI/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
                 <span>Live Project</span>
               </a>
-              <a href=""
-                ><i class="fa-brands fa-github"></i>
-                <span>Github Repositry</span></a
+              <a
+                href="https://github.com/nabihakhan6t4/Ant-design-UI"
+                target="_blank"
               >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
             </div>
           </div>
+
           <div class="portfolio-detail">
             <p class="numb">02</p>
-            <h3>React Dashboard</h3>
+            <h3>Post App (React)</h3>
             <p>
-              Built an interactive dashboard with React and Firebase for
-              real-time data handling.
+              Designed a dynamic post management app using
+              <strong>React.js</strong> and <strong>Firebase</strong>. Features
+              full CRUD functionality with real-time database integration.
             </p>
+            <div class="tech">
+              <p>React.js, Firebase, JavaScript, CSS</p>
+            </div>
+            <div class="live-github">
+              <a
+                href="https://nabihakhan6t4.github.io/Post-app_React/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Live Project</span>
+              </a>
+              <a
+                href="https://github.com/nabihakhan6t4/Post-app_React"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
           </div>
+
           <div class="portfolio-detail">
             <p class="numb">03</p>
-            <h3>Portfolio Website</h3>
+            <h3>iNoteBook (React)</h3>
             <p>
-              Created a personal portfolio using Bootstrap and JavaScript
-              animations.
+              Developed a personal note-taking app using
+              <strong>React.js</strong>. Allows users to create, update, and
+              delete notes with a clean and responsive UI.
             </p>
+            <div class="tech">
+              <p>React.js, JavaScript, CSS, GitHub Pages</p>
+            </div>
+            <div class="live-github">
+              <a
+                href="https://nabihakhan6t4.github.io/iNoteBook/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Live Project</span>
+              </a>
+              <a
+                href="https://github.com/nabihakhan6t4/iNoteBook"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
           </div>
+
           <div class="portfolio-detail">
             <p class="numb">04</p>
-            <h3>E-commerce UI</h3>
+            <h3>E-Commerce Website</h3>
             <p>
-              Designed a modern e-commerce UI with Tailwind CSS and integrated
-              smooth animations.
+              Crafted a sleek and responsive
+              <strong>e-commerce platform</strong> using core web technologies.
+              Includes product cards, animations, and a cart-style layout for a
+              seamless shopping experience.
             </p>
+            <div class="tech">
+              <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="live-github">
+              <a
+                href="https://nabihakhan6t4.github.io/E-commerce/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Live Project</span>
+              </a>
+              <a
+                href="https://github.com/nabihakhan6t4/E-commerce"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
           </div>
+
           <div class="portfolio-detail">
             <p class="numb">05</p>
-            <h3>Weather App</h3>
+            <h3>Real-Time Chat App</h3>
             <p>
-              Developed a weather app that fetches real-time weather data using
-              an API.
+              Developed a real-time chat application using the
+              <strong>MERN stack</strong> and <strong>Socket.IO</strong>.
+              Features include user authentication and instant messaging similar
+              to WhatsApp.
             </p>
+            <div class="tech">
+              <p>MongoDB, Express.js, React.js, Node.js, Socket.IO</p>
+            </div>
+            <div class="live-github">
+              <a
+                href="https://github.com/nabihakhan6t4/CHAT_APP"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
           </div>
         </div>
+
         <div class="portfolio-box">
-          <!-- Image Carousel (To be added with JavaScript) -->
+          <div class="portfolio-crousel">
+            <div class="img-slide">
+              <div class="img-item">
+                <img src="images/project-1-2.jpg" alt="" />
+              </div>
+              <div class="img-item">
+                <img src="images/project-2-2.jpg" alt="" />
+              </div>
+              <div class="img-item">
+                <img src="images/project-3-2.jpg" alt="" />
+              </div>
+              <div class="img-item">
+                <img src="images/project-4.jpg" alt="" />
+              </div>
+              <div class="img-item">
+                <img src="images/project-4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="navigation">
+            <button class="arrow-left disabled">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="arrow-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="contact-container">
+        <!-- Contact Info Text -->
+        <div class="contact-box">
+          <h2>Let’s Work Together</h2>
+          <p class="desc">
+            Whether you're looking for a developer to bring your ideas to life
+            or want to collaborate on something amazing — I’m just a message
+            away! Drop a line and let’s create something meaningful together.
+            💡💻✨
+          </p>
+
+          <div class="contact-detail">
+            <div class="detail">
+              <i class="fa-solid fa-phone"></i>
+              <p>Phone</p>
+              <p>+92 341 3067774</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="detail">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Email</p>
+              <p>khannabiha923@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="detail">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Address</p>
+              <p>Gulshan-e-Iqbal, Karachi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-box">
+          <form action="">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+            <div class="field-box">
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Full Name"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Email Subject"
+                required
+              />
+
+              <textarea
+                name="message"
+                id=""
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
