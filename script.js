@@ -1,6 +1,13 @@
 const navLinks = document.querySelectorAll("header nav a");
 const logoLink = document.querySelector(".logo");
 const sections = document.querySelectorAll("section"); // ✅ Yahan ghalati theek ki hai
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector("header nav");
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("fa-xmark");
+  navbar.classList.toggle("active");
+});
 
 const activePage = () => {
   const barsBox = document.querySelector(".bars-box");
@@ -25,7 +32,8 @@ const activePage = () => {
 };
 
 navLinks.forEach((link, index) => {
-  link.addEventListener("click", (e) => { // ✅ e event object access kiya
+  link.addEventListener("click", (e) => {
+    // ✅ e event object access kiya
     e.preventDefault(); // ✅ Page reload rokne ke liye
 
     if (!link.classList.contains("active")) {
@@ -51,7 +59,8 @@ navLinks.forEach((link, index) => {
   });
 });
 
-logoLink.addEventListener("click", (e) => { // ✅ e event object access kiya
+logoLink.addEventListener("click", (e) => {
+  // ✅ e event object access kiya
   e.preventDefault(); // ✅ Page reload rokne ke liye
 
   if (!navLinks[0].classList.contains("active")) {
