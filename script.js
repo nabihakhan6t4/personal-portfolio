@@ -25,6 +25,10 @@ const activePage = () => {
     barsBox.classList.add("active");
   }, 1100);
 
+
+    menuIcon.classList.remove("fa-xmark");
+  navbar.classList.remove("active");
+
   // Sections ko yahan se remove karo, neeche navLinks loop mein manage karenge
   // sections.forEach((section) => { // ❌ Yeh line remove kar do
   //   section.classList.remove("active"); // ❌ Yeh line remove kar do
